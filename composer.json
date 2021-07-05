@@ -1,0 +1,47 @@
+{
+    "name": "joy/backpack-api",
+    "description": "Joy BackpackApi",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Ramakant Gangwar",
+            "email": "gangwar.ramakant@gmail.com",
+            "homepage": "https://github.com/rxcod9",
+            "role": "Tech Lead"
+        }
+    ],
+    "homepage": "https://github.com/joy/backpack-api",
+    "keywords": [
+        "Laravel",
+        "Backpack",
+        "BackpackApi",
+        "JoyBackpackApi"
+    ],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Joy\\BackpackApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Joy\\BackpackApi\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Joy\\BackpackApi\\BackpackApiServiceProvider"
+            ],
+            "aliases": {
+                "BackpackApi": "Joy\\BackpackApi\\Facades\\BackpackBackpackApi"
+            }
+        }
+    }
+}
