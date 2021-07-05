@@ -31,7 +31,7 @@ class BackpackApiServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/backpack-api.php', 'joy-backpack-api');
+        $this->mergeConfigFrom(__DIR__ . '/../config/backpack-api.php', 'joy-backpack-api');
 
         // Register the service the package provides.
         $this->app->singleton('joy-backpack-api', function ($app) {
@@ -58,7 +58,7 @@ class BackpackApiServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/backpack-api.php' => config_path('joy-backpack-api.php'),
+            __DIR__ . '/../config/backpack-api.php' => config_path('joy-backpack-api.php'),
         ], 'joy-backpack-api.config');
 
         // Publishing the views.
